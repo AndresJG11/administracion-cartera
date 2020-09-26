@@ -4,15 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_1"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/borders"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="APLICACIÓN"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:drawableLeft="@drawable/ic_usuario_de_perfil"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/ic_bloquear"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/boton_1"
+            android:text="Entrar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/boton_1"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
