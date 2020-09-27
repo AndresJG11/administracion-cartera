@@ -41,11 +41,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:drawableLeft="@drawable/ic_usuario_de_perfil"
+            android:drawablePadding="10dp"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
+            android:drawablePadding="5dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:drawableLeft="@drawable/ic_bloquear"
@@ -57,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
-            android:background="@drawable/boton_1"
+            android:background="@drawable/boton_2"
             android:text="Entrar"
             android:textColor="#FFFFFF"
             android:textSize="16sp"

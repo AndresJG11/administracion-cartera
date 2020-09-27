@@ -5,4 +5,6 @@
     <color name="colorTertiary">#FFC021</color>
     <color name="colorPrimaryDark">#E8621E</color>
     <color name="colorAccent">#FF4C21</color>
+    <color name="colorBlue">#1F95FF</color>
+
 </resources>
